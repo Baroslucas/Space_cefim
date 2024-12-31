@@ -1,0 +1,108 @@
+/* barlow-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./Assets/Fonts/barlow-v12-latin/barlow-v12-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+/* barlow-condensed-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./Assets/Fonts/barlow-condensed-v12-latin/barlow-condensed-v12-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+/* bellefair-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./Assets/Fonts/bellefair-v14-latin/bellefair-v14-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+
+:root {
+    --color1: #ffffff;
+    --color2: #D0D6F9;
+    --color3: #0B0D17;  
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: url(./Assets/Img/Background\ mobile.jpg) center/cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;  
+} 
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px 0 20px;
+     
+}
+.logo {
+    display: flex;
+}
+.logo img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.burger img {
+    width: 1.5rem;
+    height: 1.3125rem;
+}
+.card {
+    color: var(--color2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+.text-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.first-line {
+    font-size: 1rem;
+    font-family: 'Barlow Condensed'; 
+}
+h1 {
+    font-size: 5rem;
+    font-family: 'Bellefair';
+    font-weight: 300;
+    color: var(--color1);
+    margin: 10px;
+}
+.text {
+    font-family: 'barlow';
+    font-size: .9375rem;
+    padding-bottom: 30px;
+    line-height: 25px;
+    font-weight: 50;
+}
+.explore-btn {
+    margin-top: 40px;
+}
+span {
+    border-radius: 150px;
+    height: 150px;
+    width: 150px;
+    color: var(--color3);
+    background-color: var(--color1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+     
+}

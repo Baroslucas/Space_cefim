@@ -1,0 +1,291 @@
+/* barlow-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./Assets/Fonts/barlow-v12-latin/barlow-v12-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+/* barlow-condensed-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./Assets/Fonts/barlow-condensed-v12-latin/barlow-condensed-v12-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+/* bellefair-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Bellefair';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./Assets/Fonts/bellefair-v14-latin/bellefair-v14-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+:root {
+    --color1: #ffffff;
+    --color2: #D0D6F9;
+    --color3: #0B0D17;  
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(./Assets/Img/Background-destination.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: var(--color2);
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;  
+}
+
+.nav-bar {
+    display: none;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.burger {
+    width: 1.5rem;
+    height: 1.3125rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first-paragraph {
+    display: flex;
+    
+    align-items: center;
+}
+
+.pick-destination {
+    font-family: "Barlow Condensed";
+    font-size: 1rem;
+    color: var(--color1);
+    text-transform: uppercase;
+    letter-spacing: .1688rem;
+    margin: 0 0 0 18px;
+    justify-content: space-evenly;
+}
+
+.select-planet {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#planet{
+    margin: 5px 0;
+    width: 170px;
+    height: 170px;
+}
+
+.page-number{
+    font-family: "Barlow Condensed";
+    color: #ffffff25;
+    letter-spacing: .1688rem;
+}
+
+.destination {
+    
+    display: flex;
+    font-family: "Barlow Condensed";
+    font-size: .875rem;
+    letter-spacing: .1475rem;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.moon {
+    color: var(--color1);
+    text-align: center;
+    position: relative;
+}
+
+.moon::after {
+    content: "";
+    position: absolute;
+    background: var(--color1);
+    height: 3px;
+    width: 100%;
+    bottom: -8px;
+    left: 0;
+    
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 85%;
+}
+
+h1 {
+    font-family: "Bellefair";
+    font-size: 3.5rem;
+    color: var(--color1);
+    font-weight: 300;
+   margin: 0;
+   padding-top: 20px;
+}
+
+.paragraph {
+    font-family: "Barlow";
+    font-size: .9375rem;
+    line-height: 1.5625rem;
+    position: relative;
+    margin-top: 1px;
+}
+
+.paragraph::after {
+    content: "";
+    position: absolute;
+    background: #ffffff59;
+    height: 1px;
+    width: 100%;
+    bottom: -32px;
+    left: 0; 
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.distance {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.travel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-title {
+    font-family: "Barlow Condensed";
+    font-size: .875rem;
+    margin-bottom: 12px;
+    letter-spacing: .1475rem;
+
+}
+
+.info-number {
+    font-family: "Bellefair";
+    font-size: 1.75rem;
+    color: var(--color1);
+}
+
+@media (min-width:768px) {
+    body {
+        background-image: url(./Assets/Img/destination_tablet_background.png);
+        
+        
+    }
+    .burger {
+        display: none;
+    }
+
+    nav {
+        height: 96px;
+        padding: 0;
+    }
+
+    .logo {
+        width: 48px;
+        height: 48px;
+    }
+
+    .nav-bar {
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(40.774227142333984px);
+        display: flex;
+        justify-content: space-evenly;
+        width: 60%;
+        margin: 0;
+        height: 100%;
+    }
+    nav button {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        color: var(--color1);
+        text-transform: uppercase;
+        font-family: "Barlow Condensed";
+        letter-spacing: .1475rem;
+        /* width: 100%; */
+        
+    }
+
+    /* #home,
+    #crew,
+    #technology {
+        width: 100%;
+    } */
+
+    #destination {
+        position: relative; 
+    }
+
+    #destination::after {
+        content: "";
+        height: 3px;
+        background-color: var(--color1);
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        left: 43px;
+        transform: translateX(-50%)
+    }
+
+    .logo img{
+        margin-left: 24px;
+        width: 24px;
+    }
+
+    .first-paragraph {
+        font-size: 1.25rem;
+    }
+
+    #planet {
+        width: 300px;
+        height: 300px;
+    }
+
+    .destination {
+        width: 37%;
+    }
+
+    
+}
+
+
